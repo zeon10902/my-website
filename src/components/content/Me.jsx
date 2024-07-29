@@ -3,7 +3,7 @@ import logo from '../../assets/Z-removebg-svg.svg'
 import { Link, Outlet } from 'react-router-dom'
 
 const Me = () => {
-    return <div>
+    return <div> 
         { /*
         <img src={logo} alt="zeon1's logo" width='200rem' height='200rem' />
         <p className='image-description'>
