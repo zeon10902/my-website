@@ -1,5 +1,5 @@
 import { Container, Nav, Navbar, Row } from 'react-bootstrap'
-import logo from '../../assets/Z-removebg-svg.svg'
+import logo from '/Z-removebg-svg.svg'
 import { Link, Outlet } from 'react-router-dom'
 
 const Me = () => {

@@ -1,3 +1,9 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .App {
   font-size: large;
   font-family: 'Times New Roman', Times, serif;
@@ -12,42 +18,37 @@
   flex-direction: column;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
 #dark {
   background-color: #0f0f23;
   color: white;
 }
 
 p {
-    text-align: center;
-    margin: 0 15rem;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 60rem;
+  padding: 0 5rem;
 }
 
-
 @media (max-width: 768px) {
-    p {
-        margin: 0 5rem;
-    }
+  p {
+    max-width: 40rem;
+  }
 }
 
 @media (max-width: 480px) {
-    p {
-        margin: 0 2rem;
-    }
+  p {
+    max-width: 20rem;
+  }
 }
 
-
 .nav {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .nav label {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 #dark .nav label {
