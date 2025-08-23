@@ -1,6 +1,6 @@
 const More = () => {
     return <div>
-        <p>This page is currently empty.</p>
+        <p style={{textAlign: 'center'}}>This page is currently empty.</p>
     </div>
 }
 

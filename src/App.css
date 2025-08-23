@@ -1,36 +1,12 @@
-/* * {
-  box-sizing: border-box;
-} */
-
-/* body {
-  margin: 0;
-  padding: 0;
-} */
-
 .App {
-  /* font-size: 1em; */
   font-family: Lora;
-  /* margin: 0; */
-  /* padding: 0;  */
   min-height: 100vh;
-  /* padding-top: 1rem; */
   display: flex;
   justify-content: center;
-  align-items: center;
-  /* flex-direction: column; */
-  /* overflow: hidden; */
-}
-
-p {
-  text-align: center;
-  /* margin: 0 auto; */
-  max-width: 60rem;
-  padding: 0 clamp(1rem, 5rem, 5rem);
-  line-height: 2;
 }
 
 .nav {
-  /* display: flex; */
+  top: 0;
   justify-content: center;
 }
 
@@ -38,3 +14,46 @@ p {
   text-decoration: underline;
 }
 
+.card-fan-container {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  margin-top: 25rem;
+  margin-left: 3.75rem;
+  position: relative;
+}
+
+.card-fan-card {
+  position: relative;
+  margin-left: -3.75rem;
+  transition: transform 0.3s cubic-bezier(0.4, 0.2, 0.2, 1), box-shadow 0.3s;
+  z-index: 1;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .card-fan-container {
+    margin-left: 5rem;
+  }
+
+  .card-fan-card {
+    margin-left: -5rem;
+  }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+  .card-fan-container {
+    margin-left: 7rem;
+  }
+
+  .card-fan-card {
+    margin-left: -7rem;
+  }
+}
+
+.card-fan-card:hover {
+  transform: scale(1.12) translateY(-20px);
+  z-index: 10;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
