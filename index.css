@@ -1,0 +1,70 @@
+body {
+	display: block;
+	background-color: white;
+	color: #606060;
+	width: 900px;
+	font-family: "Lora", serif;
+	font-size: 1.1em;
+	margin: auto;
+	margin-top: 2.5em;
+	margin-bottom: 2.5em;
+	line-height: 1.5em;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+	color: #404040;
+	text-decoration: underline;
+}
+
+mark {
+	background-color: #ffd9c2;
+}
+
+.mainblock {
+	position: relative;
+	display: table;
+	margin-bottom: 1.7em;
+	padding: 0.94em;
+	border: 1px solid black;
+}
+
+.pjlist {
+	word-spacing: 1em;
+}
+
+.pj {
+	color: black;
+}
+
+.pjblock {
+	display: table-row;
+}
+
+.left {
+	display: table-cell;
+	height: 100%;
+	padding-right: 0.8em;
+	vertical-align: middle;
+}
+
+.pjdes {
+	font-style: italic;
+	color: #404040;
+}
+
+.right {
+	display: table-cell;
+	text-align: right;
+	width: 320px;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.right img {
+	position: relative;
+	width: 300px;
+	height: auto;
+}
